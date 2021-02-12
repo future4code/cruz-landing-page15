@@ -181,6 +181,10 @@ h2 {
 /*Responsividade*/
 
 @media screen and (min-width: 600px) {
+    
+
+
+
     .footer-direita > *{
         flex: 1;
     }
