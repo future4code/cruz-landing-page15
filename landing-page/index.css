@@ -2,6 +2,7 @@
     margin: 0;
     padding: 0;
     font-family: Graphik-Regular, "Gotham SSm A", "Gotham SSm B", "Helvetica Neue", Helvetica, Arial, sans-serif !important;
+    max-width: 1280px;
 }
 /*Header*/
 header {
@@ -11,24 +12,18 @@ header {
     /* justify-content: end; */
     align-items: center;
     padding: 0px 0px;
-
 }
 .logo {
-    padding-right: 600px;
-    
+    padding-right: 300px;    
 }
-
 .navegador {
-    flex-grow:2;
-    font-size: 1.5rem;
+    flex-grow:1;
+    font-size: 1.0rem;
 }
-
 a {
     padding-left: 70px;
     text-decoration: none;
-    color:white;
-
-    
+    color:white;   
 }
 button {
     background-color: #FABD60;
@@ -37,8 +32,7 @@ button {
     border-radius: 25px;
     border:  #FABD60;
 }
-
-/*Capa*/
+/*Capa index*/
 .capa {
     display: flex;
     flex-direction: row;
@@ -47,20 +41,18 @@ button {
 }
 .capa1 {
     flex-direction: column;
-    padding: 50px 0px 50px 150px;  
+    padding: 50px 0px 50px 50px;  
     color: whitesmoke;
 }
-
 .capa2 {
-    padding: 0px 100px;
+    padding: 0px 5px;
     position: relative;
-    right: 200px;
+    right:150px;
 }
-
 .capa1 h1 {
     font-weight: 600;
     font-size:3.125rem;
-    line-height:3.75rem
+    line-height:2.75rem;
 }
 .capa1 p h2{
     margin:40px;
@@ -68,12 +60,11 @@ button {
     font-size: 1rem;
     line-height: 2rem;
 }
-
-/*Cards*/
+/*Cards index*/
 .card-prod {
     display:flex;
     flex-direction:column;
-    width:300px;
+    width:350px;
     justify-content: center;
     align-items:center;   
     box-shadow: 2px 2px 5px darkgray;
@@ -83,9 +74,198 @@ button {
 .card {
     display:flex;
     flex-direction: row;
-    padding: 50px 350px;
+    padding: 80px 50px;
     column-gap: 20px;
 }
+/*Pra Você (produtos.html)*/
+.capa-produtos {
+    display: flex;
+    flex-direction: column;
+    background-color: #FF914C;
+    justify-content: center;
+    align-items: center;
+    padding: 50px;
+}
+.capa-img {
+    border-radius: 25px;
+}
+
+.capa-produtos h2 {
+    padding-top: 30px;
+    color:white;
+}
+.btn-prod {
+    background-color: #FABD60;
+    color: white;
+    padding: 20px 45px;
+    border-radius: 25px;
+    border:  #FABD60;
+    margin-top: 50px;
+    font-size: 1rem;
+    font-weight: 700;
+    position: relative;
+    right:35px
+}
+/*Produtos Cards*/
+.produtos {
+    display:flex;
+    flex-direction:column;
+    width:350px;
+    justify-content: center;
+    align-items:center;   
+    box-shadow: 2px 2px 5px darkgray;
+    text-align: center;
+    border-radius: 25px;
+}
+.produtos-card {
+    display:flex;
+    /* flex-direction: row; */
+    padding: 80px 50px;
+    column-gap: 20px;
+}
+/*Quem somos*/
+.capa-principal {
+    background-color:#FF914C;
+    text-align: center;
+    color:white;
+    height: 200px;
+    padding-top: 60px;
+    
+}
+.capa-principal h1 {
+    font-weight: 600;
+    font-size:2.125rem;
+    line-height:2.75rem;
+}
+
+.capa-principal img {
+    padding-top: 30px;
+}
+.quem-somos1 {
+    background-color: #FF914C;
+    margin: 50px 150px;
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-radius: 25px;
+}
+.quem-somos1 h1 {
+    color:white;
+    text-align: center;
+    padding: 0px 150px;
+    position:relative;
+    bottom:50px;
+}
+.quem-somos1 p {
+    color:white;
+    text-align: center;
+    padding: 10px 150px 0px;
+    position:relative;
+    bottom:50px;
+}
+.quem-somos2 {
+    background-color:white;
+    margin: 50px 150px;
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-radius: 25px;
+}
+.quem-somos2 h1 {
+    color: #FF914C;
+    text-align: center;
+    padding: 0px 150px;
+}
+.quem-somos2 p {
+    color:#FF914C;
+    text-align: center;
+    padding: 10px 150px 0px;
+}
+
+.quem-somos3 {
+    background-color: #FF914C;
+    margin: 80px 150px;
+    padding: 20px 0px;
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-radius: 25px;
+}
+.quem-somos3 h1 {
+    color:white;
+    text-align: center;
+    padding: 0px 150px;
+    position:relative;
+    top:10px;
+}
+.quem-somos3 p {
+    color:white;
+    text-align: center;
+    padding: 10px 150px 0px;
+    position:relative;
+    top:10px;
+}
+
+/*Abra sua conta */
+.conta {
+    background-color: white;
+    color:#FABD60;
+    height: 400px;
+    display: flex;
+    flex-direction: row;
+}
+.conta1 {
+    display: flex;
+    flex-direction: column; 
+    width: 500px; 
+    padding: 50px 0px 50px 50px;
+}
+
+.conta1 h2{
+    margin:40px;
+    padding: 30px 0px;
+    font-size: 1rem;
+    line-height: 2rem;
+    text-align:center;
+}
+.conta1 p {
+    margin:40px;
+    padding-bottom: 30px;
+    font-size: 1rem;
+    line-height: 2rem;
+    text-align: justify;
+}
+.cadastro {
+    padding: 10px;
+    box-shadow: 2px 2px 5px #FF914C;
+    text-align: center;
+    align-self: center;
+    border-radius: 25px;
+    position: relative;
+    left: 180px;
+    
+}
+.cadastro h2 {
+    padding: 25px 0px;
+}
+.input1 {
+    background-color: #FF914C;
+    color: white;
+    padding: 10px 25px;
+    border-radius: 25px;
+    border:  #FABD60;
+}
+.input2 {
+    background-color: #FABD60;
+    color: white;
+    padding: 10px 25px;
+    border-radius: 25px;
+    border:  #FABD60;
+}
+
 
 /** Footer**/
 footer {
