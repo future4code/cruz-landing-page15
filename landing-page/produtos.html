@@ -9,36 +9,44 @@
 </head>
 <body>
     <header>
-        <img src="./img/f4bank.png" alt="F4Bank" class="logo" width="50" height="50">
-        <!-- <h3>F4Bank</h3> -->
+        <img src="./img/f4bank-removebg.png" alt="F4Bank" class="logo" width="150" height="151">
         <nav class="navegador">
             <ul>
-                <li><a href="./index.html">Home</a></li>
-                <li><a href="./produtos.html">Para você</a></li>
-                <li><a href="./quem-somos.html">Quem Somos</a></li>
-                <li><a href="./conta.html">Abra sua conta</a></li>
+                <a href="./index.html">Início</a>
+                <a href="./produtos.html">Para você</a>
+                <a href="./quem-somos.html">Quem Somos</a>
+                <a class="destaque" href="./conta.html">
+                    <button type="submit">Abra sua conta</button>
+                </a>
             </ul>
         </nav>
     </header>
-    <main class="main-container">
+    <main class="main-produtos">
         <section>
-            <div>
-                <img src="./img/people-phone.jpg" alt="crédito" width="400" height="150">
-                <h2>Resolva tudo em um clique com a F4Bank</h2>
+            <div class="capa-produtos">
+                <img class="capa-img" src="./img/people-phone.jpg" alt="crédito" width="400" height="150">
+                <h2>Resolva tudo em um clique com a F4Bank!</h2>
+                <a class="destaque" href="./conta.html">
+                    <button class="btn-prod" type="submit">Abra sua conta</button>
+                </a>
             </div>
-            <div class="card1">
-                <h3>Conta Digital</h3>
-                <p>Conta digital gratuita, com um App completíssimo para utilizar quando e onde quiser</p>
-            </div>
-            <div class="card2">
-                <h3>Cartão</h3>
-                <p>Cartão de Crédito sem anuidade e Cartão de Débito. Você no comando. Escolha ter dois em um, ou entre um ou
-                    outro, permitindo flexibilidade a você </p>
-            </div>
-            <div class="card3">
-                <h3>Investimentos</h3>
-                <p>Tudo para quem quer investir com total segurança, aliando experts com credibilidade de um banco com mais de
-                    30 de mercado</p>
+            <div class="produtos-card">
+                <div class="produtos">
+                <img src="./img/credit_card.png" alt="crédito" width="150" height="150">
+                    <h3>Crédito</h3>
+                    <p>Conta digital com cartão de crédito sem anuidade</p>
+                </div>
+                <div class="produtos">
+                    <img src="./img/money.png" alt="crédito" width="100" height="100">
+                    </br>
+                    <h3>Taxa ZERO</h3>
+                    <p>Depósitos, transferências e mais serviços, sem pagamento de taxas no app da F4Bank</p>
+                </div>
+                <div class="produtos">
+                    <img src="./img/Piggy.png" alt="crédito" width="150" height="150">
+                    <h3>Investimento</h3>
+                    <p>Seu dinheito tem rendimento maior que a poupança</p>
+                </div>
             </div>
         </section>
     </main>

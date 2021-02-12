@@ -9,31 +9,33 @@
 </head>
 <body>
     <header>
-        <img src="./img/f4bank.png" alt="F4Bank" class="logo" width="50" height="50">
+        <img src="./img/f4bank-removebg.png" alt="F4Bank" class="logo" width="150" height="151">
         <!-- <h3>F4Bank</h3> -->
         <nav class="navegador">
             <ul>
-                <li><a href="./index.html">Home</a></li>
-                <li><a href="./produtos.html">Para você</a></li>
-                <li><a href="./quem-somos.html">Quem Somos</a></li>
-                <li><a href="./conta.html">Abra sua conta</a></li>
+                <a href="./index.html">Início</a>
+                <a href="./produtos.html">Para você</a>
+                <a href="./quem-somos.html">Quem Somos</a>
+                <a class="destaque" href="./conta.html">
+                    <button type="submit">Abra sua conta</button>
+                </a>
             </ul>
         </nav>
     </header>
-    <main class="main-container">
-        <section>
-            <div>
+    <main>
+        <section class="conta">
+            <div class="conta1">
                 <h1>Abra sua conta digital e tenha o melhor de dois mundos </h1>
                 <p>Inclusão é o que o mundo precisa. Na F4Bank, você possui a força de um banco com mais de 30 anos de mercado
                     com a modernidade da era digital, agregando mais valor e confiança, para que você seja benefiado com a
                     melhor cobertura de serviços. Sem exclusões.</p>
             </div>
-            <div>
-                <h2>Abra sua conta aqui F4Bank</h2>
+            <div class="cadastro">
+                <h2>Abra sua conta aqui! F4Bank</h2>
                 <form name="cadastro">
-                    <input type="text" name="cpf" \
+                    <input class="input1" type="number" name="cpf" \
                         title="Digite um CPF sem pontos e traços, no formato: xxxxxxxxxxx">
-                    <input type="submit" value="Continuar">
+                    <input class="input2" type="submit" value="Continuar">
             </div>
         </section>
     </main>
