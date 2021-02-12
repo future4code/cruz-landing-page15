@@ -75,9 +75,10 @@ h2 {
     color: black;
 }
 
-.footer-sul {
+.copy {
     text-align: center;
     color: black;
+    height: 40px;
     padding-top: 50px;
 }
 

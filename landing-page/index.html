@@ -4,50 +4,107 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" type="text/css" href="style.css">
-    <title>F4Bank - banco forte para seu bolso</title>
+    <link rel="stylesheet" type="text/css" href="index.css">
+    <title>F4Bank - Banco forte para seu bolso</title>
 </head>
 <body>
     <header>
-        <img src="./img/f4bank.png" alt="F4Bank" class="logo" width="50" height="50">
+        <img src="./img/f4bank-removebg.png" alt="F4Bank" class="logo" width="150" height="150">
         <!-- <h3>F4Bank</h3> -->
         <nav class="navegador">
             <ul>
-                <li><a href="./index.html">Home</a></li>
+                <!-- tirei essas li's pra poder ficar na horizontal
+                <li></li><a href="./index.html">Início</a></li>
                 <li><a href="./produtos.html">Para você</a></li>
                 <li><a href="./quem-somos.html">Quem Somos</a></li>
-                <li><a href="./conta.html">Abra sua conta</a></li>
+                <li><a href="./conta.html">Abra sua conta</a></li> -->
+
+                <a href="./index.html">Início</a>
+                <a href="./produtos.html">Para você</a>
+                <a href="./quem-somos.html">Quem Somos</a>
+                <a class="destaque" href="./conta.html">
+                    <button type="submit">Abra sua conta</button>
+                </a>
             </ul>
         </nav>
     </header>
     <main class="main-container">
         <section>
-            <div>
-                <img src="./img/f4bank.png" alt="crédito" width="150" height="150">
-                <h1>A conta digital certa pra cuidar bem do seu dinheiro, com a credibilidade que você precisa. </h1>
-                <p>Com a F4Bank, você tem conta grátis e cartão sem anuidade. Conta digital com a segurança do F4Bank, sem
-                    surpresas, sem riscos. Abra sua conta, fácil e sem complicações!</p>
+            <div class="capa">
+                <div class="capa1">
+                    <!-- tirei essa img pra imitar o site da neon <img src="./img/f4bank.png" alt="crédito" width="150" height="150"> -->
+                    <h1>A conta digital certa pra cuidar bem do seu dinheiro, com a credibilidade que você precisa. </h1>
+                    <p>Com a F4Bank, você tem conta grátis e cartão sem anuidade. Conta digital com a segurança do F4Bank, sem
+                        surpresas, sem riscos. Abra sua conta, fácil e sem complicações!</p>
+                    <h2>Resolva tudo em um clique com a F4Bank</h2>
+                </div>
+                
+                <div class="capa2">
+                    <img src="./img/capabg.png" alt="crédito" width="640" height="360">
+                </div>
             </div>
-            <div>
-                <h2>Resolva tudo em um clique com a F4Bank</h2>
-            </div>
-            <div class="card1">
-            <img src="./img/credit_card.png" alt="crédito" width="150" height="150">
-                <h3>Crédito</h3>
-                <p>Conta digital com cartão de crédito sem anuidade</p>
-            </div>
-            <div class="card2">
-                <img src="./img/money.png" alt="crédito" width="150" height="150">
-                <h3>Taxa ZERO</h3>
-                <p>Depósitos, transferências e mais serviços, sem pagamento de taxas no app da F4Bank</p>
-            </div>
-            <div class="card3">
-                <img src="./img/Piggy.png" alt="crédito" width="150" height="150">
-                <h3>Investimento</h3>
-                <p>Seu dinheito tem rendimento maior que a poupança</p>
+            <div class="card">
+                <div class="card-prod">
+                <img src="./img/credit_card.png" alt="crédito" width="150" height="150">
+                    <h3>Crédito</h3>
+                    <p>Conta digital com cartão de crédito sem anuidade</p>
+                </div>
+                <div class="card-prod">
+                    <img src="./img/money.png" alt="crédito" width="100" height="100">
+                    <h3>Taxa ZERO</h3>
+                    <p>Depósitos, transferências e mais serviços, sem pagamento de taxas no app da F4Bank</p>
+                </div>
+                <div class="card-prod">
+                    <img src="./img/Piggy.png" alt="crédito" width="150" height="150">
+                    <h3>Investimento</h3>
+                    <p>Seu dinheito tem rendimento maior que a poupança</p>
+                </div>
             </div>
         </section>
     </main>
-    <footer class="footer"></footer>
+    <footer class="footer">
+        <div class="footer-esquerda">
+            <img src="./img/f4bank-removebg.png" alt="">
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Magnam quisquam numquam molestias asperiores quidem aperiam maiores quas similique mollitia accusamus. Fuga ipsum laudantium expedita laborum cumque, eligendi accusantium quo consequatur </p>
+            <div class="socials">
+                <a href="#"> <i class ="facebook"></i> </a>
+                <a href="#"> <i class ="twitter"></i> </a>
+                <a href="#"> <i class ="instagram"></i> </a>
+                <a href="#"> <i class ="youtube"></i> </a>
+                <a href="#"> <i class ="linkedin"></i> </a>
+            </div>
+        </div>
+        <ul class="footer-direita">
+            <li>
+                <h2>Produtos e Serviços</h2>
+                <ul class="box">
+                    <li><a href="#">Cartão Sem Taxa</a></li>
+                    <li><a href="#">Conta Corrente Digital</a></li>
+                    <li><a href="#">Empréstimos</a></li>
+                    <li><a href="#">Seguros</a></li>
+            </li>
+            <li class="Recursos">
+                <h2>Links Úteis</h2>
+                <ul class="box">
+                    <li><a href="#">Conta</a></li>
+                    <li><a href="#">Perguntas</a></li>
+                    <li><a href="#">Tarifas</a></li>
+                    <li><a href="#">Atendimento ao Cliente</a></li>
+                    <li><a href="#">Conheça o F4Bank</a></li>
+            </li>
+            <li>
+                <h2>Endereço</h2>
+                <ul class="box">
+                    <li><a href="#">Setor Bancário Sul (SBS)</a></li>
+                    <li><a href="#">Quadra 3 Bloco B - Ed. Sede</a></li>
+                    <li><a href="#">Brasília - DF</a></li>
+                    <li><a href="#">CEP: 70074-900</a></li>
+            </li>
+        </ul>
+        
+    </footer>
+    <div class="copy">
+        <p>Todos os Direitos Reservados by &copy; LaGuFa - 2021</p>
+    </div>
 </body>
 </html>
