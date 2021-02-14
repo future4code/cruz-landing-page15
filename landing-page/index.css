@@ -1,11 +1,14 @@
 * {
     margin: 0;
     padding: 0;
-    font-family: Graphik-Regular, "Gotham SSm A", "Gotham SSm B", "Helvetica Neue", Helvetica, Arial, sans-serif !important;
     max-width: 1280px;
+    /* acrescentei box-sizing, pois tinha um scroll na base do site em 1280px */
+    box-sizing: border-box;
 }
+
 /*Header*/
 header {
+    font-family: Graphik-Regular, "Gotham SSm A", "Gotham SSm B", "Helvetica Neue", Helvetica, Arial, sans-serif !important;
     display: flex;
     background-color: #FF914C;
     height: 70px;
@@ -13,17 +16,20 @@ header {
     align-items: center;
     padding: 0px 0px;
 }
+main {
+    font-family: Graphik-Regular, "Gotham SSm A", "Gotham SSm B", "Helvetica Neue", Helvetica, Arial, sans-serif !important;
+}
 .logo {
-    padding-right: 300px;    
+    padding-right: 300px;
 }
 .navegador {
     flex-grow:1;
     font-size: 1.0rem;
 }
-a {
+.navegador a {
     padding-left: 70px;
     text-decoration: none;
-    color:white;   
+    color:white;
 }
 button {
     background-color: #FABD60;
@@ -32,6 +38,7 @@ button {
     border-radius: 25px;
     border:  #FABD60;
 }
+
 /*Capa index*/
 .capa {
     display: flex;
@@ -41,7 +48,7 @@ button {
 }
 .capa1 {
     flex-direction: column;
-    padding: 50px 0px 50px 50px;  
+    padding: 50px 0px 50px 50px;
     color: whitesmoke;
 }
 .capa2 {
@@ -60,13 +67,14 @@ button {
     font-size: 1rem;
     line-height: 2rem;
 }
+
 /*Cards index*/
 .card-prod {
     display:flex;
     flex-direction:column;
     width:350px;
     justify-content: center;
-    align-items:center;   
+    align-items:center;
     box-shadow: 2px 2px 5px darkgray;
     text-align: center;
     border-radius: 25px;
@@ -77,6 +85,7 @@ button {
     padding: 80px 50px;
     column-gap: 20px;
 }
+
 /*Pra Você (produtos.html)*/
 .capa-produtos {
     display: flex;
@@ -103,8 +112,6 @@ button {
     margin-top: 50px;
     font-size: 1rem;
     font-weight: 700;
-    position: relative;
-    right:35px
 }
 /*Produtos Cards*/
 .produtos {
@@ -112,7 +119,7 @@ button {
     flex-direction:column;
     width:350px;
     justify-content: center;
-    align-items:center;   
+    align-items:center;
     box-shadow: 2px 2px 5px darkgray;
     text-align: center;
     border-radius: 25px;
@@ -130,8 +137,8 @@ button {
     color:white;
     height: 200px;
     padding-top: 60px;
-    
 }
+
 .capa-principal h1 {
     font-weight: 600;
     font-size:2.125rem;
@@ -219,8 +226,8 @@ button {
 }
 .conta1 {
     display: flex;
-    flex-direction: column; 
-    width: 500px; 
+    flex-direction: column;
+    width: 500px;
     padding: 50px 0px 50px 50px;
 }
 
@@ -245,12 +252,14 @@ button {
     align-self: center;
     border-radius: 25px;
     position: relative;
-    left: 180px;
-    
+    /* tirei esse abaixo pois estava refletindo no responsivo desconfigurando todo o design
+    left: 180px; */
+
 }
 .cadastro h2 {
     padding: 25px 0px;
 }
+
 .input1 {
     background-color: #FF914C;
     color: white;
@@ -265,109 +274,394 @@ button {
     border-radius: 25px;
     border:  #FABD60;
 }
+/*footer*/
 
-
-/** Footer**/
 footer {
-    display: -webkit-flex;
-    display: -moz-flex;
-    display: -ms-flex;
-    display: -o-flex;
-    flex-flow: row wrap;
-    padding: 50px;
+    position: relative;
+    width: 100%;
+    height: auto;
+    padding: 50px 100px;
     background-color: #ff914c;
-    color: black;
-}
-
-.footer {
-    flex: 1 100%;
-}
-.footer-esquerda {
-    margin-right: 1.25em;
-    margin-bottom: 2em;
-    position: relative;
-    left: 20%;
-}
-
-.footer-esquerda img {
-    width: 50%;
-}
-
-h2 {
-    font-weight: 600;
-    font-size: 17px;
-}
-
-.footer ul {
-    list-style: none;
-    padding-left: 0;
-}
-
-.footer li {
-    line-height: 2em;
-}
-
-.footer a {
-    text-decoration: none;
-}
-
-.footer-direita {
-    display: -webkit-flex;
-    display: -moz-flex;
-    display: -ms-flex;
-    display: -o-flex;
     display: flex;
-    flex-flow: row wrap;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+footer .container {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    flex-direction: row;
+}
+
+footer .container .sec {
+    margin-right: 30px;
+}
+
+footer .container .sec.aboutus {
+    width: 40%;
+}
+
+footer .container h2 {
     position: relative;
-    left: 20%;
-}
-
-.footer-direita {
-    flex: 1 50%;
-    margin-right: 1.25em;
-}
-
-.box a {
     color: black;
+    font-weight: 500;
+    margin-bottom: 15px;
 }
 
-.footer-esquerda p {
-    padding-right: 20%;
-    color: black;
+footer .container h2:before {
+    content: '';
+    position: absolute;
+    bottom: -5px;
+    left: 0;
+    width: 50px;
+    height: 2px;
+    background: black;
 }
 
-.social a {
-    background: red;
+footer p {
+    color:black;
+}
+
+.sci {
+    margin-top: 20px;
+    display: flex;
+}
+
+.sci li {
+    list-style: none;
+}
+.sci li a {
+    display: inline-block;
     width: 40px;
     height: 40px;
-    display: inline-block;
+    background:#222;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     margin-right: 10px;
+    text-decoration: none;
+    border-radius: 4px;
 }
 
-.social a i {
-    color: black;
-    padding: 10px 12px;
+.sci li a:hover {
+    background:white
+}
+
+.sci li a .fa {
+    color:#fabd60;
     font-size: 20px;
 }
 
-/** copy **/
-.copy {
+.quicklinks {
+    position: relative;
+    width: 25%;
+}
+
+.quicklinks ul li {
+    list-style: none;
+}
+
+.quicklinks ul li a {
+    color: black;
+    margin-bottom: 10px;
+    display: inline-block;
+    text-decoration: none;
+}
+
+.quicklinks ul li a:hover {
+    color: #fabd60;
+}
+
+.contact {
+    width: calc(35% - 60px);
+    margin-right: 0 !important;
+}
+
+.contact .info {
+    position: relative;
+}
+
+.contact .info li {
+    display: flex;
+    margin-bottom: 16px;
+}
+
+.contact .info li span:nth-child(1) {
+    color: black;
+    font-size: 20px;
+    margin-right: 10px;
+}
+
+.contact .info li span {
+    color: black;
+}
+
+.contact .info li a {
+    color: black;
+    text-decoration: none;
+}
+
+.contact .info li a:hover {
+    color: #fabd60;
+}
+
+.copyrights {
     text-align: center;
     color: white;
     height: 40px;
     background-color: #ff914c;
 }
 
-/*Responsividade*/
+@media (max-width: 991px) {
 
-@media screen and (min-width: 600px) {
-    .footer-direita > *{
-        flex: 1;
+    /* tirei a imagem da capa no responsivo pq tava muito poluido */
+    .capa-img {
+        display: none;
     }
-    .footer-esquerda {
-        flex: 1 0px;
+
+    .logo {
+        padding-right: 10px;
+        width: 30%;
+        height: 100%;
     }
-    .footer-direita {
-        flex: 2 0px;
+
+    .navegador a {
+        padding-left: 10px;
+        text-decoration: none;
+        color: white;
+    }
+
+    .navegador {
+        flex-grow: 1;
+        font-size: 1.0rem;
+        text-align: right;
+    }
+
+    button {
+        background-color: #FABD60;
+        color: white;
+        padding: 5px 25px;
+        border-radius: 25px;
+        border: #FABD60;
+        margin-top: 10px;
+    }
+
+    .capa2 {
+        padding: 20px 5px;
+        position: relative;
+        right: 25%;
+    }
+
+    .capa1 h1 {
+        font-weight: 400;
+        font-size: 2rem;
+        padding: 10px;
+        letter-spacing: 3px;
+    }
+
+    .card {
+        display: flex;
+        flex-direction: column;
+        padding: 80px 50px;
+        column-gap: 30px;
+        row-gap: 30px;
+    }
+
+    .card-prod {
+        display: inline-table;
+        width: 260px;
+        box-shadow: 2px 2px 5px darkgray;
+        text-align: center;
+        border-radius: 25px;
+        height: 230px;
+    }
+
+    .conta1 {
+        display: flex;
+        flex-direction: column;
+        width: 500px;
+        padding: 50px 0px 50px 50px;
+
+    }
+
+    /* conta */
+
+    .conta {
+        background-color: white;
+        color: #FABD60;
+        height: 650px;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .conta1 {
+        display: flex;
+        flex-direction: row;
+        width: 400px;
+        padding: 20px 20px 20px 20px;
+        flex-wrap: wrap;
+    }
+
+    .conta1 p {
+        margin: 20px;
+        padding-bottom: 30px;
+        font-size: 1rem;
+        line-height: 2rem;
+        text-align: left;
+    }
+
+    /* pra você */
+
+    .capa-produtos {
+        display: flex;
+        flex-direction: column;
+        background-color: #FF914C;
+        justify-content: center;
+        align-items: center;
+        padding: 30px;
+    }
+
+    .btn-prod {
+        background-color: #FABD60;
+        color: white;
+        padding: 20px 45px;
+        border-radius: 25px;
+        border: #FABD60;
+        margin-top: 30px;
+        font-size: 1rem;
+        font-weight: 700;
+    }
+
+  .capa-produtos {
+        display: flex;
+        flex-direction: column;
+        background-color: #FF914C;
+        justify-content: center;
+        align-items: center;
+        padding: 30px;
+    }
+
+    .produtos {
+        display: flex;
+        flex-direction: column;
+        width: 280px;
+        justify-content: center;
+        align-items: center;
+        box-shadow: 2px 2px 5px darkgray;
+        text-align: center;
+        border-radius: 25px;
+        height: 250px;
+    }
+
+    .produtos-card {
+        display: flex;
+        flex-direction: column;
+        padding: 50px 50px;
+        column-gap: 20px;
+    }
+
+
+    /* quem somos */
+
+    .capa-principal {
+    background-color: #FF914C;
+    text-align: center;
+    color: white;
+    height: 280px;
+    padding-top: 30px;
+}
+
+.quem-somos1 {
+    background-color: #FF914C;
+    margin: 50px 40px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-radius: 25px;
+    padding-top: 10px;
+}
+
+.quem-somos1 h1 {
+    color: white;
+    text-align: center;
+    padding: 0px 10px;
+    position: relative;
+    bottom: 0px;
+}
+
+.quem-somos1 p {
+    color: white;
+    text-align: center;
+    padding: 10px 30px 20px;
+    position: relative;
+    bottom: 0;
+}
+
+.quem-somos2 {
+    background-color: white;
+    margin: 50px 40px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-radius: 25px;
+    padding-top: 10px;
+}
+
+.quem-somos2 h1 {
+    color: #FF914C;
+    text-align: center;
+    padding: 10px 10px;
+}
+
+.quem-somos2 p {
+    color: #FF914C;
+    text-align: center;
+    padding: 10px 10px 0px;
+}
+
+.quem-somos3 {
+    background-color: #FF914C;
+    margin: 50px 40px;
+    padding: 20px 0px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-radius: 25px;
+}
+
+.quem-somos3 h1 {
+    color: white;
+    text-align: center;
+    padding: 10px 10px;
+    position: relative;
+    top: 10px;
+}
+
+.quem-somos3 p {
+    color: white;
+    text-align: center;
+    padding: 10px 20px 0px;
+    position: relative;
+    top: 10px;
+}
+
+
+    /* footer */
+    footer {
+        padding: 40px;
+    }
+    footer .container {
+        flex-direction: column;
+    }
+    footer .container .sec {
+        margin-right: 0;
+        margin-bottom: 40px;
+    }
+    footer .container .sec.aboutus, .quicklinks {
+        width: 100%;
     }
 }
