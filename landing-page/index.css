@@ -19,11 +19,9 @@ header {
 main {
     font-family: Graphik-Regular, "Gotham SSm A", "Gotham SSm B", "Helvetica Neue", Helvetica, Arial, sans-serif !important;
 }
-.logo {
-    padding-right: 300px;
-}
+
 .navegador {
-    flex-grow:1;
+    padding-left: 400px;
     font-size: 1.0rem;
 }
 .navegador a {
@@ -78,6 +76,9 @@ button {
     box-shadow: 2px 2px 5px darkgray;
     text-align: center;
     border-radius: 25px;
+}
+.h3taxa {
+    padding-top: 30px;
 }
 .card {
     display:flex;
@@ -135,7 +136,7 @@ button {
     background-color:#FF914C;
     text-align: center;
     color:white;
-    height: 200px;
+    height: 250px;
     padding-top: 60px;
 }
 
@@ -251,6 +252,7 @@ button {
     text-align: center;
     align-self: center;
     border-radius: 25px;
+    margin-left:180px;
     position: relative;
     /* tirei esse abaixo pois estava refletindo no responsivo desconfigurando todo o design
     left: 180px; */
@@ -420,28 +422,24 @@ footer p {
         display: none;
     }
 
-    .logo {
-        padding-right: 10px;
-        width: 30%;
-        height: 100%;
+    .logos {
+        padding-right: 0px;
+        width: 90px;
+        height: 90px;
     }
 
     .navegador a {
         padding-left: 10px;
-        text-decoration: none;
-        color: white;
     }
 
     .navegador {
-        flex-grow: 1;
-        font-size: 1.0rem;
-        text-align: right;
+        padding-left:0px;
+        font-size: 0.550rem;
     }
-
     button {
         background-color: #FABD60;
         color: white;
-        padding: 5px 25px;
+        padding: 5px 8px;
         border-radius: 25px;
         border: #FABD60;
         margin-top: 10px;
@@ -510,6 +508,9 @@ footer p {
         line-height: 2rem;
         text-align: left;
     }
+    .cadastro {
+        margin-left:10px; 
+    }
 
     /* pra você */
 
@@ -533,7 +534,7 @@ footer p {
         font-weight: 700;
     }
 
-  .capa-produtos {
+    .capa-produtos {
         display: flex;
         flex-direction: column;
         background-color: #FF914C;
@@ -565,90 +566,89 @@ footer p {
     /* quem somos */
 
     .capa-principal {
-    background-color: #FF914C;
-    text-align: center;
-    color: white;
-    height: 280px;
-    padding-top: 30px;
-}
+        background-color: #FF914C;
+        text-align: center;
+        color: white;
+        height: 280px;
+        padding-top: 30px;
+    }
 
-.quem-somos1 {
-    background-color: #FF914C;
-    margin: 50px 40px;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    border-radius: 25px;
-    padding-top: 10px;
-}
+    .quem-somos1 {
+        background-color: #FF914C;
+        margin: 50px 40px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        border-radius: 25px;
+        padding-top: 10px;
+    }
 
-.quem-somos1 h1 {
-    color: white;
-    text-align: center;
-    padding: 0px 10px;
-    position: relative;
-    bottom: 0px;
-}
+    .quem-somos1 h1 {
+        color: white;
+        text-align: center;
+        padding: 0px 10px;
+        position: relative;
+        bottom: 0px;
+    }
 
-.quem-somos1 p {
-    color: white;
-    text-align: center;
-    padding: 10px 30px 20px;
-    position: relative;
-    bottom: 0;
-}
+    .quem-somos1 p {
+        color: white;
+        text-align: center;
+        padding: 10px 30px 20px;
+        position: relative;
+        bottom: 0;
+    }
 
-.quem-somos2 {
-    background-color: white;
-    margin: 50px 40px;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    border-radius: 25px;
-    padding-top: 10px;
-}
+    .quem-somos2 {
+        background-color: white;
+        margin: 50px 40px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        border-radius: 25px;
+        padding-top: 10px;
+    }
 
-.quem-somos2 h1 {
-    color: #FF914C;
-    text-align: center;
-    padding: 10px 10px;
-}
+    .quem-somos2 h1 {
+        color: #FF914C;
+        text-align: center;
+        padding: 10px 10px;
+    }
 
-.quem-somos2 p {
-    color: #FF914C;
-    text-align: center;
-    padding: 10px 10px 0px;
-}
+    .quem-somos2 p {
+        color: #FF914C;
+        text-align: center;
+        padding: 10px 10px 0px;
+    }
 
-.quem-somos3 {
-    background-color: #FF914C;
-    margin: 50px 40px;
-    padding: 20px 0px;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    border-radius: 25px;
-}
+    .quem-somos3 {
+        background-color: #FF914C;
+        margin: 50px 40px;
+        padding: 20px 0px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        border-radius: 25px;
+    }
 
-.quem-somos3 h1 {
-    color: white;
-    text-align: center;
-    padding: 10px 10px;
-    position: relative;
-    top: 10px;
-}
+    .quem-somos3 h1 {
+        color: white;
+        text-align: center;
+        padding: 10px 10px;
+        position: relative;
+        top: 10px;
+    }
 
-.quem-somos3 p {
-    color: white;
-    text-align: center;
-    padding: 10px 20px 0px;
-    position: relative;
-    top: 10px;
-}
-
+    .quem-somos3 p {
+        color: white;
+        text-align: center;
+        padding: 10px 20px 0px;
+        position: relative;
+        top: 10px;
+    }
 
     /* footer */
     footer {
